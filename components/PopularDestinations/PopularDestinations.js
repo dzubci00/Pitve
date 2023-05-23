@@ -20,7 +20,7 @@ import Slider from "react-slick";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import Bg from "../../images/ourHome/paper.png";
-import photoBottom from "../../images/imageDivider.png";
+import photoBottom from "../../images/ImageDivider.png";
 import { useScrollPercentage } from "react-scroll-percentage";
 
 function NextArrow(props) {
