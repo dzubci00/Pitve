@@ -406,7 +406,7 @@ ul{
     opacity: 0.7;
 
     @media only screen and (max-width: 600px) {
-      top: 12 px;
+      top: 12px;
       left: 12px;
     }
   }
