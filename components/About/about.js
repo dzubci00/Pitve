@@ -31,10 +31,8 @@ import img4 from "../../images/about/4.png";
 
 import { useScrollPercentage } from "react-scroll-percentage";
 import useWindowSize from "../useWindowSize.js";
-import { Anchor } from "nextjs-anchor";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useInView } from "react-intersection-observer";
-import PhotoSlider from "../PhotoSlider/photoSlider.js";
 
 
 const About = () => {

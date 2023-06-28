@@ -8,7 +8,7 @@ export const HeroWrap = styled.div`
   position: relative;
   height: 650px;
   width: 100%;
-  padding-top: 210px;
+  /* padding-top: 210px; */
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -22,8 +22,8 @@ export const HeroWrap = styled.div`
 
 export const WrapImage = styled.div`
   position: relative;
-  height: 240px;
-  width: 180px;
+  height: 180px;
+  width: 120px;
   z-index: 4;
   
 `;
@@ -70,6 +70,14 @@ export const SingleLink = styled.div`
 
  
   }
+
+  @media only screen and (max-width: 700px) {
+    margin: 0px 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom:3px;
+  }
 `;
 
 export const LinkWrap = styled.div`
@@ -79,6 +87,21 @@ export const LinkWrap = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 500px;
+
+
+  @media only screen and (max-width: 700px) {
+    width:100%;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 600px) {
+    width:70%;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 400px) {
+    width:80%;
+    justify-content: center;
+  }
+
 `;
 
 export const Divider = styled.div`
@@ -131,6 +154,11 @@ export const Bottom = styled.div`
   font-size:16px;
   line-height:22px;
   font-weight: 500;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
   @media only screen and (max-width: 950px) {
     height:175px;
   }
@@ -176,8 +204,6 @@ export const Mid = styled.div`
 
 export const BookNow = styled.a`
   text-decoration:none;
-  @media screen and (max-width: 1000px) {
-  }
 `;
 
 
@@ -185,8 +211,11 @@ export const WrapImageAndLinks = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 278px;
  
-  @media screen and (max-width: 1000px) {
+  @media only screen and (max-width: 600px) {
+    top:263px;
   }
 `;
 

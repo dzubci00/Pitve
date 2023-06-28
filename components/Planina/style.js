@@ -28,8 +28,8 @@ overflow:hidden;
 @media only screen and (max-width: 600px) {
   height: 660px;
 }
-@media only screen and (max-width: 450px) {
-  height: 640px;
+@media only screen and (max-width: 350px) {
+  height: 671px;
 }
 
 
@@ -66,25 +66,40 @@ text-align: center;
 @media only screen and (max-width: 900px) {
   height: 1100px;
 }
-@media only screen and (max-width: 1100px) {
- /*  height:1400px; */
+@media only screen and (max-width: 350px) {
+  height: 1231px;
 }
 `;
 export const WrapPlaninaDown = styled.div`
 position: absolute;
-/* bottom: 254px; */
-bottom:0;
+bottom: 320px;
 width: 100%;
-height: 100%;
+height: 547px;
 z-index: 3;
 font-style: normal;
 font-weight: 700;
 font-size: 15px;
 line-height: 142.5%;
 text-align: center;
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
+  bottom: 430px;
+  width: 100%;
+  height: 352px;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 900px) {
+  bottom: 474px;
+  width: 100%;
+  height: 264px;
+}
+@media only screen and (max-width: 600px) {
+  bottom: 506px;
+  width: 100%;
+  height: 188px;
+}
+@media only screen and (max-width: 350px) {
+  bottom: 509px;
+  width: 100%;
+  height: 121px;
 }
 `;
 export const WrapText = styled.div`
@@ -101,8 +116,9 @@ export const WrapText = styled.div`
   font-weight: 700;
   font-size: 15px;
   line-height: 142.5%;
-  transition: all 0.2s ease-out;
+ transition: transform 0.1s ease;
   text-align: center;
+  
   
 `;
 
@@ -133,12 +149,10 @@ export const WrapCol = styled.div`
   line-height: 142.5%;
   text-align: center;
   display: flex;
-  margin:0 10px;
-  a {
-    text-decoration: none;
-    color: #303145;
-    font-weight: 700;
-    cursor: pointer;
+  margin:0 10px
+ 
+  @media only screen and (max-width: 1300px) {
+    max-width:1000px;
   }
   @media only screen and (max-width: 1300px) {
     max-width:1000px;
@@ -154,7 +168,7 @@ export const WrapCol = styled.div`
     max-width:400px;
   }
   @media only screen and (max-width: 450px) {
-    max-width:290px;
+    width:90%;
   }
 `;
 export const Col = styled.div`
@@ -167,6 +181,12 @@ export const Col = styled.div`
   color: #303145;
   width:400px;
   margin: 0 30px;
+  a {
+    text-decoration:none;
+    color: #303145;
+    font-weight:bold;
+    cursor:pointer;
+  }
   ul{
     padding:0;
     margin:0;

@@ -65,7 +65,7 @@ const Footer = () => {
       </WrapImageDown>
       <WrapImageAndLinks>
         <WrapImage>
-          <Image src="/footerLogo.svg" alt="Logo" layout="fill" />
+          <Image src="/pitveLogo.svg" alt="Logo" layout="fill" />
         </WrapImage>
         <LinkWrap>
           {Links.map((e, index) => (
@@ -89,7 +89,7 @@ const Footer = () => {
           <Mid>Registarski sud: Trgovački sud u Splitu</Mid>
           <div>IBAN: HR3823400091111175285</div>
         </Upper>
-            <div>Design by <b>SUTRA.HR</b></div>
+            <div>Design by <a href="https://sutra.hr/" target="_blank"><b>SUTRA.HR</b></a></div>
       </Bottom>
     </HeroWrap>
   );

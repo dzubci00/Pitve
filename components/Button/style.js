@@ -37,8 +37,10 @@ export const ButtonWrap = styled.div`
 
   &:hover {
     background-color: #a55c3d;
+    border: 2px solid #a55c3d;
     color: white;
-    border: none;
+    
+    
   }
   &:active {
     background-color: #303145;

@@ -12,7 +12,9 @@ export const HeroWrap = styled.div`
   flex-direction: column;
   overflow: hidden;
   margin-top: 40px;
-  padding-bottom: 0rem;
+  padding-bottom: 0px;
+
+
   @media only screen and (max-width: 700px) {
     margin-top: 0;
   }
@@ -26,7 +28,6 @@ export const HeroWrap = styled.div`
 export const WrapObjects = styled.div`
   position: relative;
   width: 95%;
-  /* min-width: 115rem; */
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -107,124 +108,6 @@ position: relative;
 flex-direction: row;
 will-change: transform;
 transform: translateX(-5576.08px);
-`;
-
-export const HeroWrap2 = styled.div`
-  position: relative;
-  z-index: 11;
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin:0 auto;
-  .slick-list {
-    height:80vh;
-    @media only screen and (max-width: 600px) {
-      height: 50vh;
-    }
-  }
-
- 
-
-  .slick-dots {
-    bottom:15px;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.2);
-    left: 0;
-    right: 0;
-    width:420px;
-    margin:0 auto;
-    height:20px;
-  
-    li{
-      margin:0;
-
-    }
-    @media only screen and (max-width: 600px) {
-    
-    }
-
-  }
-  .slick-dots li button:before {
-    color: #9f9f9fb8;
-    font-size:11px;
-    opacity:1;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-  }
-  .slick-dots li.slick-active button:before {
-    color:rgb(255, 255, 255) !important;
-    opacity:1;
-}
-  .wrapLoaderNext {
-    position: absolute;
-    z-index: 20;
-    top: 45%;
-    right: 5%;
-    cursor: pointer;
-  }
-  .loaderNext {
-    border: .2rem solid #f3f3f349;
-    border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
-
-    width: 6rem;
-    height: 6rem;
-    -webkit-animation: spin 6s linear infinite;
-    animation: spin 6s linear infinite;
-  }
-  .wrapLoaderPrev {
-    position: absolute;
-    z-index: 20;
-    top: 45%;
-    left: 5%;
-    cursor: pointer;
-
-  }
-  .loaderPrev {
-    border: .2rem solid #f3f3f349;
-    border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
-    width: 6rem;
-    height: 6rem;
-    -webkit-animation: spin 6s linear infinite;
-    animation: spin 6s linear infinite;
-  }
-  .arrow {
-    position: absolute;
-    top: 1.9rem;
-    left: 1.9rem;
-    opacity: 0.7;
-  }
-  .photoSlider {
-    width: 90% !important ;
-    height:80vh !important ;
-    @media only screen and (max-width: 600px) {
-      height: 50vh  !important;
-    }
-  }
-
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
 `;
 
 

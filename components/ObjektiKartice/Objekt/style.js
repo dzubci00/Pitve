@@ -44,6 +44,12 @@ export const WrapObjekt = styled.div`
   }
 
   li{
+
+    @media only screen and (max-width: 700px) {
+      text-align:center;
+
+    }
+    
     
     @media only screen and (max-width: 450px) {
       text-align:center;
@@ -211,49 +217,7 @@ export const Line = styled.div`
  
 `;
 
-export const WrapGalleryLink = styled.div`
-  position: absolute;
-  height: 53px;
-  width: 100%;
-  cursor: pointer;
-  font-family: "Cartograph CF";
-  font-style: normal;
-  font-weight: 400;
-  bottom: 0;
-  padding-right:10px;
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
-  background: rgba(217, 217, 217, 0.22);
-  font-size: 15px;
-  transition: all 0.2s ease-in-out;
- 
 
-  :hover{
-    background: rgba(217, 217, 217, 0.9);
-    
-    transition: all 0.2s ease;
-  }
-
-:hover span{
-  color: #A55C3D;
-  /* margin-left:-50%; */
-  transform:translateX(-55%);
-  transition: all 0.2s ease-in-out;
-}
-
-
-
-  
-  @media only screen and (max-width: 800px) {
-    justify-content: center;
-    font-size:12px;
-  }
-  @media only screen and (max-width: 700px) {
-    font-size:15px;
-  }
-
-`;
 
 export const WrapLeftRight = styled.div`
   display: flex;
@@ -336,6 +300,17 @@ ul{
   }
 
  
+  .slick-list {
+    height: 85vh;
+    @media only screen and (max-width: 600px) {
+      height: 55vh;
+    }
+  }
+
+  
+
+ 
+
   .slick-dots {
     display:flex  !important;
     justify-content: center;
@@ -345,7 +320,7 @@ ul{
     background-color: rgba(0, 0, 0, 0.2);
     left: 0;
     right: 0;
-    width:520px;
+    width:510px;
     margin:0 auto;
     height:25px;
   
@@ -380,12 +355,12 @@ ul{
     cursor: pointer;
   }
   .loaderNext {
-    border: .2rem solid #f3f3f349;
+    border: 2px solid #f3f3f349;
     border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
+    border-top: 2px solid #ffffffb4;
 
-    width: 6rem;
-    height: 6rem;
+    width: 60px;
+    height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
   }
@@ -393,30 +368,30 @@ ul{
     position: absolute;
     z-index: 20;
     top: 45%;
-    left: 5%;
+    left: 4%;
     cursor: pointer;
 
   }
   .loaderPrev {
-    border: .2rem solid #f3f3f349;
+    border: 2px solid #f3f3f349;
     border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
-    width: 6rem;
-    height: 6rem;
+    border-top: 2px solid #ffffffb4;
+    width: 60px;
+    height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
   }
   .arrow {
     position: absolute;
-    top: 1.9rem;
-    left: 1.9rem;
+    top: 19px;
+    left: 19px;
     opacity: 0.7;
   }
   .photoSlider {
     width: 100% !important ;
-    height:80vh !important ;
+    height:85vh !important ;
     @media only screen and (max-width: 600px) {
-      height: 50vh  !important;
+      height: 45vh  !important;
     }
   }
 
@@ -437,6 +412,37 @@ ul{
       transform: rotate(360deg);
     }
   }
-  
 `;
 
+export const WrapGalleryLink = styled.div`
+  position: absolute;
+  height: 53px;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Cartograph CF";
+  font-style: normal;
+  font-weight: 400;
+  bottom: 0;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(217, 217, 217, 0.22);
+  font-size: 15px;
+  transition: background 0.5s, color 1s;
+
+  &:hover{
+    background: rgba(217, 217, 217, 0.9);
+    color:#A55C3D;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    justify-content: center;
+    font-size:12px;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size:15px;
+  }
+
+`;

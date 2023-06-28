@@ -66,9 +66,9 @@ export const HeroWrap = styled.div`
     cursor: pointer;
   }
   .loaderNext {
-    border: .2rem solid #f3f3f349;
+    border: 2px solid #f3f3f349;
     border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
+    border-top: 2px solid #ffffffb4;
 
     width: 60px;
     height: 60px;
@@ -79,14 +79,14 @@ export const HeroWrap = styled.div`
     position: absolute;
     z-index: 20;
     top: 45%;
-    left: 5%;
+    left: 4%;
     cursor: pointer;
 
   }
   .loaderPrev {
-    border: .2rem solid #f3f3f349;
+    border: 2px solid #f3f3f349;
     border-radius: 50%;
-    border-top: .2rem solid #ffffffb4;
+    border-top: 2px solid #ffffffb4;
     width: 60px;
     height: 60px;
     -webkit-animation: spin 6s linear infinite;

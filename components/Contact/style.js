@@ -11,7 +11,7 @@ height: 430px;
 padding-top: 80px;
 overflow:hidden;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     height: auto;
     padding-bottom:80px;
   }
@@ -25,12 +25,19 @@ top: 0;
  
 img{
   width:100%;
-  height: 750px;
+  height: 100%;
+  object-fit:cover;
+  transition: transform 0.1s ease;
 }
-  @media only screen and (max-width: 1050px) {
+
+
+  @media only screen and (max-width: 700px) {
+    height: 750px;
+    img{
+      height: 950px;
+    }
   }
-  @media only screen and (max-width: 450px) {
-  }
+
 `;
 export const Overlay = styled.div`
   position: absolute;
@@ -86,8 +93,12 @@ export const Num = styled.p`
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-
   color: #ffffff;
+
+  a{
+    text-decoration:none;
+    color:#ffffff;
+  }
   @media only screen and (max-width: 1050px) {
   }
   @media only screen and (max-width: 450px) {
@@ -100,7 +111,7 @@ export const Data = styled.div`
   margin: 0 auto;
   width: 700px;
   justify-content: space-between;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     flex-direction:column;
     align-items:center;
     width:100%;
@@ -116,7 +127,7 @@ export const Tel = styled.div`
     margin-top:20px;
     margin-bottom:5px;  
    }  
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +143,7 @@ export const Adress = styled.div`
     margin-top:20px;
     margin-bottom:5px;  
    }  
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +159,7 @@ export const Email = styled.div`
     margin-top:20px;
     margin-bottom:5px;  
    }  
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +179,7 @@ export const Buttons = styled.div`
     text-decoration:none;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
     flex-direction:column;
     align-items:center;

@@ -23,6 +23,7 @@ const Contact = () => {
     threshold: 0,
     triggerOnce: false,
   }); */
+  
   const [ref, percentage] = useScrollPercentage({
     threshold: 0,
   });
@@ -37,19 +38,20 @@ const Contact = () => {
       <Data>
         <Email>
           <Name>EMAIL</Name>
-          <Num>dvorpitve@gmail.com</Num>
+          <Num><a href="mailto:dvorpitve@gmail.com" target="_blank">dvorpitve@gmail.com</a></Num>
         </Email>
 
         <Tel>
           <Name>TELEPHONE</Name>
-          <Num>+385 98 965 6320</Num>
+          <Num><a href="tel:+385 98 965 6320" target="_blank">+385 98 965 6320</a></Num>
         </Tel>
 
         <Adress>
           <Name>ADDRESS</Name>
-          <Num>
+          <Num><a href="https://www.google.com/maps/place/43%C2%B008'59.2%22N+16%C2%B040'05.9%22E/@43.1497778,16.6683056,628m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d43.1497778!4d16.6683056" target="_blank">
             Pitve 20
             <br /> 21465 Jelsa <br /> Croatia
+            </a>
           </Num>
         </Adress>
       </Data>

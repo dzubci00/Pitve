@@ -87,6 +87,7 @@ export const WrapImages = styled.div`
   height: 120.6rem;
 }
 @media only screen and (max-width: 800px) {
+  width:0;
   height: 75.6rem;
 }
 @media only screen and (max-width: 500px) {
@@ -176,7 +177,7 @@ export const Image1 = styled.div`
    
 }
 @media only screen and (max-width: 800px) {
-  left:-23em;
+  left:-50rem;
   top:17em;
   width:40.7rem;
   height:40rem;
@@ -185,7 +186,11 @@ export const Image1 = styled.div`
 @media only screen and (max-width: 500px) {
   width: 28.5rem;
   height: 32.6rem;
-  left:-17rem;
+  left:-33rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    left:-30rem;
   }
 `;
 export const Image2 = styled.div`
@@ -229,7 +234,7 @@ export const Image2 = styled.div`
   
 }
 @media only screen and (max-width: 800px) {
- left:6rem;
+ left:-17rem;
  top:36rem;
  width:32.9rem;
  height:40rem;
@@ -238,7 +243,7 @@ export const Image2 = styled.div`
 @media only screen and (max-width: 500px) {
   width: 25.5rem;
   height: 31.6rem;
-  left: 0rem;
+  left: -13rem;
 }
 `;
 export const Image4 = styled.div`
@@ -282,23 +287,23 @@ export const Image4 = styled.div`
 
 }
  @media only screen and (max-width: 800px) {
-  left: 40rem;
+  left: 17rem;
   top: 16rem;
   width:34rem;
   height:45.4rem;
 }
 @media only screen and (max-width: 600px) {
-  left: 33rem;
+  left: 10rem;
   top: 16rem;
 }
 @media only screen and (max-width: 500px) {
-  left: 23rem;
+  left: 12rem;
   top:18rem;
   width: 20.9rem;
   height: 26.9rem;
 }
   @media only screen and (max-width: 400px) {
-    left: 15rem
+    left: 6rem;
   }
 `;
 export const Image3 = styled.div`

@@ -1,4 +1,4 @@
-import { HeroWrap, WrapImageDivider, WrapObjects, Container} from "./style.js";
+import { HeroWrap, WrapImageDivider, WrapObjects, Container, HeroWrap2} from "./style.js";
 // import HeroVideo from "../../video/kraciVideo.mp4";
 
 import Objekt from "./Objekt/Objekt";
@@ -11,6 +11,7 @@ import h3_1 from "../../images/house3_1.png";
 import { imageList } from "./list.js";
 import Slider from "react-slick";
 
+import { useInView } from "react-intersection-observer";
 import useWindowSize from "../useWindowSize.js";
 import ImageContainer from "./imageContainer/imageContainer.js";
 
@@ -20,6 +21,7 @@ import { villaC } from "./villaC.js";
 
 
 const Objekti = () => {
+
 
   const handleClick = (id) => {
   
@@ -79,9 +81,14 @@ const Objekti = () => {
     ]
       }
 
+      const { ref, inView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+      });
+
       
   return (
-    <HeroWrap>
+    <HeroWrap id="images" ref={ref}>
       <WrapObjects>
         <Objekt
           id={1}
@@ -138,16 +145,18 @@ const Objekti = () => {
 
     
       <WrapImageDivider>
-      <Container>
-        <Slider {...settings}>
-          {imageList.map((image) => (
-            <ImageContainer
-              key={image.id}
-              photo={image.photo}
-            />
-          ))}
-        </Slider>
-      </Container>
+
+        <Container>
+          <Slider {...settings}>
+            {imageList.map((image) => (
+              <ImageContainer
+                key={image.id}
+                photo={image.photo}
+              />
+            ))}
+          </Slider>
+        </Container>
+        
       </WrapImageDivider>
     </HeroWrap>
   );

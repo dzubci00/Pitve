@@ -117,7 +117,8 @@ export const WrapImage = styled.div`
   z-index: 0;
   width:2000px;
   height:2500px;
-
+  transition: transform 0.1s ease;
+  
   img{
     width:2000px;
   height:2500px;
@@ -157,14 +158,16 @@ export const SubTitle = styled.h3`
 export const Text = styled.p`
   font-family: "Civane-NorLig";
   font-weight: 100;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
-
+  font-size: 15px;
+  line-height: 21px;
   color: #303145;
+
   ul {
-    padding-left: 1rem;
+    padding-left: 10px;
   }
-  @media only screen and (max-width: 800px) {
-    font-size: 1.3rem;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 13px;
+    line-height: 18px;
   }
 `;

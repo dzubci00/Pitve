@@ -11,7 +11,8 @@ import {
   WrapLeftRight,
   WrapGalleryLink,
   HeroWrap2,
-  WrapPhoto
+  WrapPhoto,
+  CenteredText
 } from "./style.js";
 
 // import HeroVideo from "../../video/kraciVideo.mp4";
@@ -56,8 +57,8 @@ const settings = {
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 4000,
+  speed: 3000,
+  autoplaySpeed: 2200,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
@@ -124,6 +125,8 @@ const handleClosePopup =()=>{
 
  const size=useWindowSize();
 
+ 
+
   return (
     <WrapObjekt>
        {/*    {/* <button onClick={handleClick}>Show Popup</button> */}
@@ -153,7 +156,7 @@ const handleClosePopup =()=>{
           objectFit="cover"
           placeholder="blur"
         />
-        <WrapGalleryLink className="gallery-title"style={{ transition:"all 1s ease-in-out"}} onClick={() => handleClicked(id)}>
+        <WrapGalleryLink onClick={() => handleClicked(id)}>
           <span>{title} PHOTO GALLERY</span>
         </WrapGalleryLink>
       </WrapImage>
