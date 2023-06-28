@@ -353,6 +353,10 @@ ul{
     top: 45%;
     right: 5%;
     cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+      top: 50%;
+    }
   }
   .loaderNext {
     border: 2px solid #f3f3f349;
@@ -363,6 +367,11 @@ ul{
     height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
+
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   .wrapLoaderPrev {
     position: absolute;
@@ -370,6 +379,10 @@ ul{
     top: 45%;
     left: 4%;
     cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+      top: 50%;
+    }
 
   }
   .loaderPrev {
@@ -380,12 +393,22 @@ ul{
     height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
+
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   .arrow {
     position: absolute;
     top: 19px;
     left: 19px;
     opacity: 0.7;
+
+    @media only screen and (max-width: 600px) {
+      top: 12 px;
+      left: 12px;
+    }
   }
   .photoSlider {
     width: 100% !important ;
