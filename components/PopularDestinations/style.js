@@ -156,11 +156,10 @@ export const WrapBg = styled.div`
   img{
     width:100%;
     height: 1900px;
+    object-fit:cover;
+    transition: transform 0.1s ease;
   }
-  @media only screen and (max-width: 1900px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const Title = styled.h3`
   position: relative;

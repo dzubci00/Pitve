@@ -37,10 +37,15 @@ const Objekti = () => {
     vilaPhotoB=h2;
     vilaPhotoC=h3;
   }
-  else{
+  else if (size.width<=700&&size.width>500){
     vilaPhotoA=h1_1;
     vilaPhotoB=h2_1;
     vilaPhotoC=h3_1;
+  }
+  else{
+    vilaPhotoA=h1;
+    vilaPhotoB=h2;
+    vilaPhotoC=h3;
   }
 
   const settings = {

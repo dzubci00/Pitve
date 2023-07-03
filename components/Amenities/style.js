@@ -117,7 +117,6 @@ export const WrapImage = styled.div`
   z-index: 0;
   width:2000px;
   height:2500px;
-  transition: transform 0.1s ease;
   
   img{
     width:2000px;

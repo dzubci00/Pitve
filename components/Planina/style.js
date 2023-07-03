@@ -13,8 +13,11 @@ overflow:hidden;
 @media only screen and (max-width: 1300px) {
   height: 760px;
 }
+@media only screen and (max-width: 1200px) {
+  height: 750px;
+}
 @media only screen and (max-width: 1100px) {
-  height: 740px;
+  height: 730px;
 }
 @media only screen and (max-width: 1000px) {
   height: 720px;
@@ -25,11 +28,20 @@ overflow:hidden;
 @media only screen and (max-width: 750px) {
   height: 680px;
 }
+@media only screen and (max-width: 660px) {
+  height: 670px;
+}
 @media only screen and (max-width: 600px) {
   height: 660px;
 }
+@media only screen and (max-width: 475px) {
+  height: 654px;
+}
+@media only screen and (max-width: 415px) {
+  height: 642px;
+}
 @media only screen and (max-width: 350px) {
-  height: 671px;
+  height: 668px;
 }
 
 
@@ -116,7 +128,6 @@ export const WrapText = styled.div`
   font-weight: 700;
   font-size: 15px;
   line-height: 142.5%;
- transition: transform 0.1s ease;
   text-align: center;
   
   

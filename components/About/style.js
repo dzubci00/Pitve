@@ -15,22 +15,22 @@ export const AboutWrap = styled.div`
   overflow: hidden;
   z-index: 0;
   padding: 5rem 0 0 0;
-  margin-bottom:4rem;
+  padding-bottom:4rem;
   h1{
     margin-top:0;
   }
    @media only screen and (max-width: 1500px) {
-    margin-bottom:0rem;
+   padding-bottom:0rem;
    
   }
   @media only screen and (max-width: 1100px) {
-    margin-bottom:2rem;
+    padding-bottom:2rem;
   } 
   @media only screen and (max-width: 800px) {
    display:flex;
    flex-direction: column;
    align-items: center;
-   margin-bottom:0rem;
+   padding-bottom:0rem;
   }
 `;
 export const WrapBg = styled.div`

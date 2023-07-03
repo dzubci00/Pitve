@@ -39,9 +39,7 @@ export const HeroWrap = styled.div`
       margin:0;
     }
     
-    @media only screen and (max-width: 600px) {
-    
-    }
+   
 
   }
   .slick-dots li button:before {
@@ -74,6 +72,11 @@ export const HeroWrap = styled.div`
     height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
+
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   .wrapLoaderPrev {
     position: absolute;
@@ -91,12 +94,22 @@ export const HeroWrap = styled.div`
     height: 60px;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
+
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   .arrow {
     position: absolute;
     top: 19px;
     left: 19px;
     opacity: 0.7;
+
+    @media only screen and (max-width: 600px) {
+      top: 12px;
+      left: 12px;
+    }
   }
   .photoSlider {
     width: 100% !important ;

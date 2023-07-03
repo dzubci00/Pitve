@@ -182,7 +182,9 @@ export const WrapImg1 = styled.div`
   position: relative;
   width: 100%;
   height: 41.5rem;
- 
+  @media only screen and (max-width: 600px) {
+    height: 200px;
+  }
   
 `;
 export const WrapImg2 = styled.div`
