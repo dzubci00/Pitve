@@ -55,14 +55,9 @@ const PhotoSlider = () => {
       },
     ]
   };
-  const size = useWindowSize();
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
 
   return (
-    <HeroWrap id="images" ref={ref}>
+    <HeroWrap>
       <Slider {...settings}>
         {images.map((img, index) => (
           <WrapPhoto key={index}>

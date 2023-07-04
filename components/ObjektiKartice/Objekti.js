@@ -1,4 +1,4 @@
-import { HeroWrap, WrapImageDivider, WrapObjects, Container, HeroWrap2} from "./style.js";
+import { HeroWrap, WrapImageDivider, WrapObjects, Container} from "./style.js";
 // import HeroVideo from "../../video/kraciVideo.mp4";
 
 import Objekt from "./Objekt/Objekt";
@@ -10,6 +10,8 @@ import h3 from "../../images/house3.png";
 import h3_1 from "../../images/house3_1.png";
 import { imageList } from "./list.js";
 import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import { useInView } from "react-intersection-observer";
 import useWindowSize from "../useWindowSize.js";
@@ -51,9 +53,8 @@ const Objekti = () => {
   const settings = {
     slidesToShow: 6,
     infinite:true,
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: -10000,
+    autoplaySpeed: -100000,
     speed:5000,
     pauseOnHover: false,
     cssEase: 'linear',
@@ -85,15 +86,9 @@ const Objekti = () => {
 
     ]
       }
-
-      const { ref, inView } = useInView({
-        threshold: 0.1,
-        triggerOnce: true,
-      });
-
       
   return (
-    <HeroWrap id="images" ref={ref}>
+    <HeroWrap >
       <WrapObjects>
         <Objekt
           id={1}
@@ -146,11 +141,7 @@ const Objekti = () => {
           gallery={villaC}
         />
       </WrapObjects>
-      
-
-    
       <WrapImageDivider>
-
         <Container>
           <Slider {...settings}>
             {imageList.map((image) => (
@@ -161,7 +152,6 @@ const Objekti = () => {
             ))}
           </Slider>
         </Container>
-        
       </WrapImageDivider>
     </HeroWrap>
   );
