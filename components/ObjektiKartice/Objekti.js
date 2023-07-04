@@ -10,6 +10,8 @@ import h3 from "../../images/house3.png";
 import h3_1 from "../../images/house3_1.png";
 import { imageList } from "./list.js";
 import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import { useInView } from "react-intersection-observer";
 import useWindowSize from "../useWindowSize.js";
@@ -85,11 +87,6 @@ const Objekti = () => {
 
     ]
       }
-
-      const { ref, inView } = useInView({
-        threshold: 0.1,
-        triggerOnce: true,
-      });
 
       
   return (
