@@ -51,7 +51,6 @@ const Objekti = () => {
   }
 
   const settings = {
-    className="photoSlider",
     slidesToShow: 6,
     infinite:true,
     slidesToScroll: 1,
@@ -96,7 +95,7 @@ const Objekti = () => {
         <Objekt
           id={1}
           photo={vilaPhotoA}
-          title="VILLA AB"
+          title="VILLA A"
           text="Old stone house converted into a luxury villa offering everything you need for a vacation in a place where nature and luxury meet. The house consists of 3 floors, with the living room, kitchen, bedrooms, spacious terraces and the swimming pool"
           data1="Capacity of 8 people (6+2 in 200 m2)
 3 floors"
