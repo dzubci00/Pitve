@@ -93,7 +93,7 @@ const Objekti = () => {
 
       
   return (
-    <HeroWrap id="images" ref={ref}>
+    <HeroWrap>
       <WrapObjects>
         <Objekt
           id={1}
