@@ -86,16 +86,10 @@ const Objekti = () => {
 
     ]
       }
-<<<<<<< HEAD
       
-  return (
-    <HeroWrap >
-=======
-
-      
+    
   return (
     <HeroWrap>
->>>>>>> 39d648bf68417c09cf50a7003b78b64e1cc4c2b7
       <WrapObjects>
         <Objekt
           id={1}
