@@ -55,8 +55,8 @@ const Objekti = () => {
     infinite:true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
-    speed:10000,
+    autoplaySpeed: -10000,
+    speed:5000,
     pauseOnHover: false,
     cssEase: 'linear',
     responsive: [
