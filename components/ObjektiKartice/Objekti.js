@@ -63,24 +63,28 @@ const Objekti = () => {
         breakpoint: 1600,
         settings: {
           slidesToShow: 5,
+          speed:5000,
         }
       },
       {
         breakpoint: 900,
         settings: {
           slidesToShow: 4,
+          speed:5000,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
+          speed:7000,
         }
       },
       {
         breakpoint: 380,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          speed:7000,
         }
       },
 
