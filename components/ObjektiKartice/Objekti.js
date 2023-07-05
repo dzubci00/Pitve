@@ -80,7 +80,7 @@ const Objekti = () => {
       {
         breakpoint: 380,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       },
 
