@@ -46,6 +46,7 @@ const PhotoSlider = () => {
     autoplaySpeed: 2200,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover:false,
     responsive: [
       {
         breakpoint: 600,

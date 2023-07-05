@@ -53,7 +53,6 @@ const settings = {
   className: "photoSlider",
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
-  lazyLoad: true,
   dots: true,
   infinite: true,
   autoplay: true,
@@ -61,6 +60,7 @@ const settings = {
   autoplaySpeed: 2200,
   slidesToShow: 1,
   slidesToScroll: 1,
+  pauseOnHover:false,
   responsive: [
     {
       breakpoint: 700,

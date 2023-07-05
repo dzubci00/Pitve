@@ -20,6 +20,8 @@ const VideoAerial = () => {
           height="100%"
           playing
           muted
+          playsInline
+          loop={true}
         />
       )}
     </Wrap>
