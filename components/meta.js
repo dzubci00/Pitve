@@ -3,9 +3,9 @@ import Head from "next/head";
 export default function Meta() {
   return (
     <Head>
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
-      <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon.svg" />
-      <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon.svg" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
       <title>Dvor Pitve Villas</title>
       <meta name="description" content="Escape to the beautiful Croatian island of Hvar and experience the luxury in hundreds-year-old stone houses in the picturesque town Pitve. Here everything is simpler, calmer, and more relaxed."></meta>
       {/* <link rel="manifest" href="/favicon/site.webmanifest" /> */}
