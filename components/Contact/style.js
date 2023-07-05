@@ -95,10 +95,24 @@ export const Num = styled.p`
   text-align: center;
   color: #ffffff;
 
+
   a{
     text-decoration:none;
     color:#ffffff;
+    margin-top:10px;
   }
+
+  a:hover {
+    position: relative;
+    font-weight:bold;
+    transition:all 0.1s ease-in-out;
+  }
+
+  a:not(:hover){
+    font-weight:normal;
+    transition:all 0.1s ease-in-out;
+  }
+   
   @media only screen and (max-width: 1050px) {
   }
   @media only screen and (max-width: 450px) {

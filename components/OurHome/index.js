@@ -91,7 +91,7 @@ const OurHome = () => {
         <Image src={Bg} alt="background" layout="fill" objectFit="cover" />
       </WrapBg>{" "}
       <div style={{ marginTop: "10rem" }}>{inView && <Example />}</div>
-      <Title>Our home are Pitve</Title>
+      <Title>Our home is Pitve</Title>
       <WrapText>
         <Left>
           <Wrap2Images>

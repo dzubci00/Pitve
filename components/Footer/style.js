@@ -218,4 +218,3 @@ export const WrapImageAndLinks = styled.div`
     top:263px;
   }
 `;
-

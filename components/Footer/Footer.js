@@ -22,7 +22,7 @@ import { Anchor } from "nextjs-anchor";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Lottie from "lottie-react";
-import madeBySutra from "./madeBySutra";
+import madeBySutraAnimation from "./madeBySutra.json";
 import Up from "../../images/footer/bg.png";
 import Down from "../../images/footer/down.png";
 
@@ -43,6 +43,7 @@ const Footer = () => {
       },
     ],
   };
+  <Lottie animationData={madeBySutraAnimation} />
   return (
     <HeroWrap ref={ref}>
       <WrapBg>
@@ -89,8 +90,14 @@ const Footer = () => {
           <Mid>Registarski sud: Trgovački sud u Splitu</Mid>
           <div>IBAN: HR3823400091111175285</div>
         </Upper>
-            <div>Design by <a href="https://sutra.hr/" target="_blank"><b>SUTRA.HR</b></a></div>
+           {/*  <div>Design by <a href="https://sutra.hr/" target="_blank"><b></b></a></div> */}
+            <div >
+              <a href="https://sutra.hr/" target="_blank"> 
+                <Lottie loop={true} animationData={madeBySutraAnimation}  style={{fontSize:"20px"}}/> 
+              </a>
+            </div>
       </Bottom>
+
     </HeroWrap>
   );
 };
