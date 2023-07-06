@@ -18,10 +18,6 @@ export const HeroWrap = styled.div`
     }
   }
 
-  
-
- 
-
   .slick-dots {
     display:flex  !important;
     justify-content: center;
@@ -149,7 +145,5 @@ export const WrapPhoto = styled.div`
 
   @media only screen and (max-width: 600px) {
     height: 45vh;
-  }
-  @media only screen and (max-width: 420px) {
   }
 `;

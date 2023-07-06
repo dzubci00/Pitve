@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
 import { HeroWrap, Container, Title, WrapArrow, WrapBg, } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 import Image from "next/image";
 import Bg from "../../images/ourHome/paper.png";
 import Destination from "./Beach/Beach.js";
 import { beachesList } from "./list.js";
-import { VscArrowRight } from "react-icons/vsc";
 import Slider from "react-slick";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -36,7 +34,6 @@ function PrevArrow(props) {
 
 const PopulareBeaches = () => {
   const settings = {
-    // className: "photoSlider",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     infinite: true,
@@ -55,14 +52,6 @@ const PopulareBeaches = () => {
           infinite: true,
         }
       },
-      /* {
-        breakpoint: 1250,
-        settings: {
-          infinite: true,
-          centerPadding: "40px",
-          slidesToShow: 2
-        }
-      }, */
       {
         breakpoint: 800,
         settings: {

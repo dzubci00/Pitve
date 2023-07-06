@@ -16,34 +16,20 @@ export const HeroWrap = styled.div`
   overflow: hidden;
   z-index: 100;
  
-@media only screen and (max-width: 1200px) {}
-
-@media only screen and (max-width: 900px) {}
-
-@media only screen and (max-width: 600px) {}
-
 `;
 
 export const Overlay = styled.div`
-flex: none;
-height: 300px;
-width: 560px;
-left: calc(50% - 561px / 2);
-overflow: hidden;
-position: absolute;
-/* top: calc(50% - 100 px / 2); */
-transform: perspective(1200px);
-  /* position: absolute;
-  height: 360px;
-  width: 56rem;
-  top: 44rem; */
+  flex: none;
+  height: 300px;
+  width: 560px;
+  left: calc(50% - 561px / 2);
+  overflow: hidden;
+  position: absolute;
+  transform: perspective(1200px);
   background: linear-gradient(180deg,rgba(1,1,1,.51) 0%,rgba(35,35,35,0) 100%);
   filter: blur(0.5px);
   z-index: 1;
 
-  @media only screen and (min-width: 1800px) {
-    /* top:34rem; */
-  }
   @media only screen and (max-width: 600px) {
   background: rgba(0, 0, 0, 0.2); 
   top:0;
@@ -58,7 +44,6 @@ export const WrapText = styled.div`
   z-index: 5;
   width: 47.4rem;
   height: auto;
-  /* margin-top: 19rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,12 +63,6 @@ export const WrapImage = styled.div`
   position: absolute;
   height: 100%;
   width:100%;
-
-@media only screen and (max-width: 1200px) {}
-
-@media only screen and (max-width: 900px) {}
-
-@media only screen and (max-width: 600px) {}
 `;
 export const Title = styled.h1`
   font-family: "Civane-NorMed";
@@ -100,10 +79,10 @@ export const Title = styled.h1`
     font-size: 44px;
     line-height: 77.01px;
   }
-@media only screen and (max-width: 600px) {
-  font-size: 31px;
-  line-height: 50px;
-}
+  @media only screen and (max-width: 600px) {
+    font-size: 31px;
+    line-height: 50px;
+  }
 `;
 export const SubTitle = styled.p`
   font-family: "Civane-NorLig";
@@ -117,13 +96,13 @@ export const SubTitle = styled.p`
   @media only screen and (min-width: 1800px) {
     margin:0 30px;
     }
-    @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
       line-height: 25px;
     }
   @media only screen and (max-width: 900px) {
   font-size: 16px;
   line-height:22px;
-  }
+    }
   @media only screen and (max-width: 600px) {
     font-size: 14px;
     line-height:18px;

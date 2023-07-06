@@ -3,7 +3,6 @@ import {
   SingleLink,
   WrapImage,
   LinkWrap,
-  Divider,
   WrapBg,
   Bottom,
   Upper,
@@ -12,13 +11,10 @@ import {
   BookNow,
   WrapImageAndLinks,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
-import Link from "next/link";
 
 import Image from "next/image";
 
 import { Links } from "../Navigation/links.js";
-import { Anchor } from "nextjs-anchor";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Lottie from "lottie-react";
@@ -33,16 +29,7 @@ const Footer = () => {
     threshold: 0,
     triggerOnce: false,
   });
-  const interactivity = {
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0, 1],
-        type: "play",
-        frames: [0, 92],
-      },
-    ],
-  };
+  
   <Lottie animationData={madeBySutraAnimation} />
   return (
     <HeroWrap ref={ref}>
@@ -90,7 +77,6 @@ const Footer = () => {
           <Mid>Registarski sud: Trgovački sud u Splitu</Mid>
           <div>IBAN: HR3823400091111175285</div>
         </Upper>
-           {/*  <div>Design by <a href="https://sutra.hr/" target="_blank"><b></b></a></div> */}
             <div >
               <a href="https://sutra.hr/" target="_blank"> 
                 <Lottie loop={true} animationData={madeBySutraAnimation}  style={{fontSize:"20px"}}/> 

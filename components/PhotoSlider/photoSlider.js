@@ -1,8 +1,6 @@
 import { HeroWrap, WrapPhoto, WrapPhoto2 } from "./style.js";
 // import HeroVideo from "../../video/kraciVideo.mp4";
 
-import { useInView } from "react-intersection-observer";
-import useWindowSize from "../useWindowSize.js";
 import Slider from "react-slick";
 import Image from "next/image";
 import { images } from "./images.js";

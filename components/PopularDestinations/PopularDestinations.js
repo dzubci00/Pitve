@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import {
   HeroWrap,
@@ -12,7 +12,6 @@ import {
   Right,
   Image1,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 import Image from "next/image";
 import Destination from "./Destination/Destination.js";
 import { destinationsList } from "./list.js";
@@ -65,14 +64,6 @@ const PopularDestinations = () => {
           infinite: true,
         }
       },
-      /* {
-        breakpoint: 1250,
-        settings: {
-          infinite: true,
-          centerPadding: "40px",
-          slidesToShow: 2
-        }
-      }, */
       {
         breakpoint: 800,
         settings: {

@@ -13,7 +13,6 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { useInView } from "react-intersection-observer";
 import useWindowSize from "../useWindowSize.js";
 import ImageContainer from "./imageContainer/imageContainer.js";
 

@@ -56,11 +56,6 @@ font-weight: 700;
 font-size: 15px;
 line-height: 142.5%;
 text-align: center;
-@media only screen and (max-width: 1800px) {
-  /* height: 1117px; */
-}
-@media only screen and (max-width: 450px) {
-}
 `;
 
 export const WrapPlaninaUp = styled.div`
@@ -68,7 +63,6 @@ position: absolute;
 top: 0;
 width: 100%;
 height: 980px;
-
 z-index: 1;
 font-style: normal;
 font-weight: 700;
@@ -122,7 +116,6 @@ export const WrapText = styled.div`
   width: 100%;
   height: 111.7px;
   z-index: 2;
- /*  padding:0 100px; */
   top: 196px;
   font-style: normal;
   font-weight: 700;
@@ -146,9 +139,6 @@ export const Title = styled.h2`
   @media only screen and (max-width: 600px) {
     font-size: 28px;
     line-height: 35px;
-  }
-  @media only screen and (max-width: 450px) {
-   /*  margin-bottom: 20px; */
   }
 `;
 export const WrapCol = styled.div`
@@ -207,6 +197,5 @@ export const Col = styled.div`
     line-height: 18px;
     margin: 0 15px;
   }
- 
-  
+
 `;

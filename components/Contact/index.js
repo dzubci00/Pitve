@@ -11,19 +11,14 @@ import {
   Num,
   Buttons,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
+
 import Image from "next/image";
 import Up from "../../images/contact/bg.png";
 import { useScrollPercentage } from "react-scroll-percentage";
-import { useInView } from "react-intersection-observer";
 import Button from "../Button/index.js";
 
 const Contact = () => {
- /*  const { ref, inView, entry } = useInView({
-    threshold: 0,
-    triggerOnce: false,
-  }); */
-  
+ 
   const [ref, percentage] = useScrollPercentage({
     threshold: 0,
   });

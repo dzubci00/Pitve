@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
-// import heroPhoto from "../../images/hero.png"
-
-// import { HeroWrap } from "./style.js"
-
 export const HeroWrap = styled.div`
   position: relative;
   height: 650px;
   width: 100%;
-  /* padding-top: 210px; */
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -67,8 +62,6 @@ export const SingleLink = styled.div`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-
- 
   }
 
   @media only screen and (max-width: 700px) {
@@ -87,7 +80,6 @@ export const LinkWrap = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 500px;
-
 
   @media only screen and (max-width: 700px) {
     width:100%;
@@ -110,8 +102,7 @@ export const Divider = styled.div`
   height: 16px;
   width: 1px;
   background-color: #c6c6c6;
-  @media only screen and (max-width: 420px) {
-  }
+  
 `;
 export const WrapBg = styled.div`
   position: absolute;
@@ -119,10 +110,7 @@ export const WrapBg = styled.div`
   height: 100%;
   top: 0;
   z-index: 2;
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 export const WrapImageDown = styled.div`
   position: absolute;
@@ -132,10 +120,7 @@ export const WrapImageDown = styled.div`
   z-index: 3;
   transition: all 10s ease-out;
   top: ${(props) => (props.inView ? ` -30px;` : `0px;`)};
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 
 export const Bottom = styled.div`
@@ -162,8 +147,7 @@ export const Bottom = styled.div`
   @media only screen and (max-width: 950px) {
     height:175px;
   }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 
 export const Upper = styled.div`
@@ -184,8 +168,7 @@ export const Upper = styled.div`
     align-items:center;
     /* margin-bottom:3rem; */
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const Mid = styled.div`
   position: relative;

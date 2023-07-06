@@ -25,16 +25,12 @@ export const Container = styled.div`
   width: 80%;
   min-width: 120rem;
   display: flex;
-
-  @media only screen and (max-width: 1050px) {
-  }
 `;
 export const Grid = styled.div`
   display: grid;
   z-index: 10;
   margin: 0 auto;
   width: 80%;
-/*   height: 30rem; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 30px;
@@ -75,8 +71,6 @@ export const Grid = styled.div`
     height: auto;
     width: 80%;
    
-    
-
     div {
       padding-right: 0rem;
       ul{

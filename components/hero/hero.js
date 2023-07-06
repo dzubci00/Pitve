@@ -10,17 +10,10 @@ import {
 } from "./style.js";
 // import HeroVideo from "../../video/kraciVideo.mp4";
 import Image from "next/image";
-
-import { Anchor } from "nextjs-anchor";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import useWindowSize from "../useWindowSize.js";
-
 import { useInView } from "react-intersection-observer";
 import Navbar from "../Navigation/navbar.js";
-/* import heroBg from "../../images/hero/HeroBg2.png"; */
 import heroBg from "../../images/hero/hero_1.png";
-import heroBg2 from "../../images/hero/hero.png";
-import heroBg3 from "../../images/hero/hero2.png";
+
 import Button from "../Button/index.js";
 
 const Hero = () => {
@@ -63,7 +56,6 @@ const Hero = () => {
           transform: `scale(${scale})`,
         }}
       > 
-      {/* {size.width>1200?<Image src={heroBg} alt="Logo" objectFit="cover" layout="fill" placeholder="blur" />:<Image src={heroBg2} alt="Logo" objectFit="cover" layout="fill" placeholder="blur" />}  */}
         <Image src={heroBg} alt="Logo"  layout="fill" placeholder="blur" objectFit="cover" />
       </WrapImage>
       <Navbar/>

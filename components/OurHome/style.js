@@ -15,10 +15,6 @@ export const OurHomeWrap = styled.div`
   overflow: hidden;
   text-align: center;
   padding-bottom: 5rem;
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const WrapBg = styled.div`
   position: absolute;
@@ -26,9 +22,6 @@ export const WrapBg = styled.div`
   height: 100%;
   width: 100%;
   bottom: 0;
-  
-  @media only screen and (max-width: 450px) {
-  }
 `;
 
 export const WrapOtok = styled.div`
@@ -37,7 +30,6 @@ export const WrapOtok = styled.div`
   height: 50rem;
   width: 180%;
   top: 0;
-  
 `;
 export const Title = styled.h1`
   position: relative;
@@ -50,8 +42,6 @@ export const Title = styled.h1`
   color: #303145;
   @media only screen and (max-width: 600px) {
     font-size: 28px;
-  }
-  @media only screen and (max-width: 450px) {
   }
 `;
 export const SubTitle = styled.h3`
@@ -103,10 +93,8 @@ export const Left = styled.div`
     display:flex;
     flex-direction:column;
     margin: 0 auto;
-
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const WrapLeftText = styled.div`
   position: relative;
@@ -123,8 +111,6 @@ export const WrapLeftText = styled.div`
     width: 100%;
     max-width:100%;
   }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const WrapRightText = styled.div`
   position: relative;
@@ -135,8 +121,7 @@ export const WrapRightText = styled.div`
     
     margin-bottom:5rem;
   }
-  @media only screen and (max-width: 450px) {
-  }
+
 `;
 export const WrapTextImage = styled.div`
   position: relative;
@@ -194,16 +179,13 @@ export const WrapImg2 = styled.div`
   @media only screen and (max-width: 600px) {
     height:34.5rem;
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const WrapImg3 = styled.div`
   position: relative;
   width: 37.7rem;
   height: 59.6rem;
  
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const WrapImg4 = styled.div`
   position: relative;
@@ -310,8 +292,7 @@ export const WrapImg7 = styled.div`
   @media only screen and (max-width: 900px) {
    display:none;
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const Right = styled.div`
   position: relative;
@@ -321,8 +302,7 @@ export const Right = styled.div`
     width:100%;
     margin:0;
   }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 export const Bottom = styled.div`
   position: relative;

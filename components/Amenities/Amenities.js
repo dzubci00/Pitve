@@ -8,11 +8,10 @@ import {
   Text,
 } from "./style.js";
 
-// import HeroVideo from "../../video/kraciVideo.mp4";
 import { useScrollPercentage } from "react-scroll-percentage";
 import Image from "next/image";
 import Bg from "../../images/amenities/bg2.svg";
-import { Repeat } from "@material-ui/icons";
+
 
 const Amenities = () => {
   const [ref, percentage] = useScrollPercentage({

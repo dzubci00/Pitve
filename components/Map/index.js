@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Wrap } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 import mapboxgl from "!mapbox-gl";
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 

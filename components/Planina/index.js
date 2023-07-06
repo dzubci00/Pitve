@@ -10,19 +10,15 @@ import {
   Col,
   WrapAll
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
+
 import useWindowSize from "../useWindowSize.js";
 import { useScrollPercentage } from "react-scroll-percentage";
 import Image from "next/image";
 import Up from "../../images/Planine/planinaBgGori.png";
 import Down from "../../images/Planine/planinaBgDoli.png";
-import { useInView } from "react-intersection-observer";
 
 const Planina = () => {
-/*   const { ref, inView, entry } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  }); */
+
 
   const [ref2, percentage] = useScrollPercentage({
     threshold: 0,

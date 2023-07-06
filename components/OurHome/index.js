@@ -1,5 +1,3 @@
-import { useRef, useState, useEffect } from "react";
-
 import {
   Title,
   OurHomeWrap,
@@ -26,15 +24,11 @@ import {
   WrapRightText,
   WrapTextImage,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 
 import { useInView } from "react-intersection-observer";
 import useWindowSize from "../useWindowSize.js";
-// import Lottie, { useLottie } from "lottie-react";
-// import LottiePlayer from "@lottiefiles/lottie-player";
-// import { create } from "@lottiefiles/lottie-interactivity";
 import animacijaJson from "./animacija.json";
-import Lottie, { useLottie } from "lottie-react";
+import { useLottie } from "lottie-react";
 import Bg from "../../images/ourHome/paper.png";
 import Otok from "../../images/ourHome/otok.png";
 import Img1 from "../../images/ourHome/img1.png";

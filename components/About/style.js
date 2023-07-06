@@ -39,17 +39,11 @@ export const WrapBg = styled.div`
   height: 100%;
   width: 100%;
   bottom: 0;
-  @media only screen and (max-width: 1900px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const WrapText = styled.div`
   position: relative;
   height: auto;
- /*  width: 46.1em; */
   width:50%;
- /*  min-width: 45em; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -85,14 +79,14 @@ export const WrapImages = styled.div`
   }
  @media only screen and (max-width: 900px) {
   height: 120.6rem;
-}
-@media only screen and (max-width: 800px) {
-  width:0;
-  height: 75.6rem;
-}
-@media only screen and (max-width: 500px) {
-  height: 66.6rem;
-}
+  }
+  @media only screen and (max-width: 800px) {
+    width:0;
+    height: 75.6rem;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 66.6rem;
+  }
 `;
 export const WrapSocial = styled.div`
   position: absolute;
@@ -125,8 +119,6 @@ export const WrapIcon = styled.div`
 
   @media only screen and (max-width: 1200px) {
     margin-right: 5rem;
-  }
-  @media only screen and (max-width: 450px) {
   }
 `;
 export const Overlay = styled.div`
@@ -163,35 +155,35 @@ export const Image1 = styled.div`
     width: 31.7rem;
     top: 5rem;
     left: 14rem;
-}
-@media only screen and (max-width: 1500px) {
-  top: 5rem;
-  left: 9rem;
-}
- }
- @media only screen and (max-width: 900px) {
-  height: 31.6rem;
-    width: 28.7rem;
+  }
+  @media only screen and (max-width: 1500px) {
     top: 5rem;
-    left: 11rem;
-   
-}
-@media only screen and (max-width: 800px) {
-  left:-50rem;
-  top:17em;
-  width:40.7rem;
-  height:40rem;
-  
-}
-@media only screen and (max-width: 500px) {
-  width: 28.5rem;
-  height: 32.6rem;
-  left:-33rem;
+    left: 9rem;
   }
+  }
+  @media only screen and (max-width: 900px) {
+    height: 31.6rem;
+      width: 28.7rem;
+      top: 5rem;
+      left: 11rem;
+    
+  }
+  @media only screen and (max-width: 800px) {
+    left:-50rem;
+    top:17em;
+    width:40.7rem;
+    height:40rem;
+    
+  }
+  @media only screen and (max-width: 500px) {
+    width: 28.5rem;
+    height: 32.6rem;
+    left:-33rem;
+    }
 
-  @media only screen and (max-width: 400px) {
-    left:-30rem;
-  }
+    @media only screen and (max-width: 400px) {
+      left:-30rem;
+    }
 `;
 export const Image2 = styled.div`
   position: absolute;
@@ -225,31 +217,30 @@ export const Image2 = styled.div`
     right:-11rem;
     top:21rem;
 
-} 
-@media only screen and (max-width: 900px) {
-  left:21rem;
-  top:25rem;
-  width:29.9rem;
-  height:37rem;
-  
-}
-@media only screen and (max-width: 800px) {
- left:-17rem;
- top:36rem;
- width:32.9rem;
- height:40rem;
+  } 
+  @media only screen and (max-width: 900px) {
+    left:21rem;
+    top:25rem;
+    width:29.9rem;
+    height:37rem;
+    
+  }
+  @media only screen and (max-width: 800px) {
+  left:-17rem;
+  top:36rem;
+  width:32.9rem;
+  height:40rem;
 
-}
-@media only screen and (max-width: 500px) {
-  width: 25.5rem;
-  height: 31.6rem;
-  left: -13rem;
-}
+  }
+  @media only screen and (max-width: 500px) {
+    width: 25.5rem;
+    height: 31.6rem;
+    left: -13rem;
+  }
 `;
 export const Image4 = styled.div`
   position: absolute;
   z-index: 4;
-
   top: 75rem;
   right: -6rem;
   height: 45.4rem;
@@ -278,33 +269,33 @@ export const Image4 = styled.div`
   left: 31rem;
   top: 69rem;
 
-}
- @media only screen and (max-width: 900px) {
-  left: 24rem;
-  top: 69rem;
-  width:31rem;
-  height:42.4rem;
-
-}
- @media only screen and (max-width: 800px) {
-  left: 17rem;
-  top: 16rem;
-  width:34rem;
-  height:45.4rem;
-}
-@media only screen and (max-width: 600px) {
-  left: 10rem;
-  top: 16rem;
-}
-@media only screen and (max-width: 500px) {
-  left: 12rem;
-  top:18rem;
-  width: 20.9rem;
-  height: 26.9rem;
-}
-  @media only screen and (max-width: 400px) {
-    left: 6rem;
   }
+  @media only screen and (max-width: 900px) {
+    left: 24rem;
+    top: 69rem;
+    width:31rem;
+    height:42.4rem;
+
+  }
+  @media only screen and (max-width: 800px) {
+    left: 17rem;
+    top: 16rem;
+    width:34rem;
+    height:45.4rem;
+  }
+  @media only screen and (max-width: 600px) {
+    left: 10rem;
+    top: 16rem;
+  }
+  @media only screen and (max-width: 500px) {
+    left: 12rem;
+    top:18rem;
+    width: 20.9rem;
+    height: 26.9rem;
+  }
+    @media only screen and (max-width: 400px) {
+      left: 6rem;
+    }
 `;
 export const Image3 = styled.div`
   position: absolute;
@@ -341,8 +332,6 @@ export const Image3 = styled.div`
   @media only screen and (max-width: 800px) {
     display:none
   }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const Title = styled.h1`
   position: relative;
@@ -365,8 +354,8 @@ export const Text = styled.p`
   font-weight: 400;
   font-size: 15px;
   line-height: 2.1rem;
-
   color: #303145;
+
   @media only screen and (max-width: 600px) {
     font-size: 13px;
   }
@@ -485,10 +474,6 @@ export const Vertical = styled.div`
   @media only screen and (max-width: 1300px) {
     margin:0 1em;
   }
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 
 export const SocialText=styled.div`
@@ -512,7 +497,4 @@ export const SocialText=styled.div`
     font-weight:normal;
     transition:all 0.3s ease-in-out;
   }
-
-
-  
 `

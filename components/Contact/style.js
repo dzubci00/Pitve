@@ -47,10 +47,7 @@ export const Overlay = styled.div`
   opacity: 0.88;
   top: 0;
   z-index: 2;
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
+
 `;
 export const Title = styled.h2`
   position: relative;
@@ -67,8 +64,7 @@ export const Title = styled.h2`
     font-size: 28px;
   line-height: 35px;
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 
 export const Name = styled.h3`
@@ -81,10 +77,7 @@ export const Name = styled.h3`
 
   color: #ffffff;
   margin-bottom: 15px;
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const Num = styled.p`
   font-family: "Montserrat";
@@ -94,7 +87,6 @@ export const Num = styled.p`
   line-height: 17px;
   text-align: center;
   color: #ffffff;
-
 
   a{
     text-decoration:none;
@@ -113,10 +105,6 @@ export const Num = styled.p`
     transition:all 0.1s ease-in-out;
   }
    
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
 `;
 export const Data = styled.div`
   position: relative;
@@ -130,8 +118,7 @@ export const Data = styled.div`
     align-items:center;
     width:100%;
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 export const Tel = styled.div`
   position: relative;
@@ -146,8 +133,7 @@ export const Tel = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 export const Adress = styled.div`
   position: relative;
@@ -162,8 +148,7 @@ export const Adress = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media only screen and (max-width: 450px) {
-  }
+  
 `;
 export const Email = styled.div`
   position: relative;
@@ -178,8 +163,7 @@ export const Email = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media only screen and (max-width: 450px) {
-  }
+ 
 `;
 
 export const Buttons = styled.div`
@@ -198,8 +182,5 @@ export const Buttons = styled.div`
     flex-direction:column;
     align-items:center;
   }
-  @media only screen and (max-width: 450px) {
-  }
-
-
+  
 `;
