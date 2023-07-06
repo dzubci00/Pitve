@@ -1,6 +1,4 @@
 import fortica from "../../images/popular/fortica.jpeg";
-import pakleni from "../../images/popular/pakleni.jpeg";
-import mlini from "../../images/popular/mlini.jpeg";
 import pt from "../../images/popular/pt.jpeg";
 import ager from "../../images/popular/ager.jpeg";
 import vino from "../../images/popular/vino.jpeg";
