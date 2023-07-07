@@ -111,15 +111,7 @@ width: 90%;
 margin: 0 auto;
 
 `;
-export const WrapArrow = styled.div`
-  position: absolute;
-  height: auto;
-  right: 0;
-  top: 6rem;
-  left: 80%;
-  @media only screen and (max-width: 1050px) {
-  }
-`;
+
 export const Title = styled.h3`
 position: relative;
 font-family: "Civane-NorMed";

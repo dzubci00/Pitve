@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-// import heroPhoto from "../../images/hero.png"
-
-// import { HeroWrap } from "./style.js"
-
 export const HeroWrap = styled.div`
   position: relative;
   z-index: 11;

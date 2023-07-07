@@ -12,13 +12,12 @@ import {
   Image2,
   Image3,
   Image4,
-  Overlay,
   WrapSocial,
   WrapIcon,
   WrapBg,
   SocialText,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
+
 import Image from "next/image";
 
 import Bg from "../../images/about/bgAbout.svg";

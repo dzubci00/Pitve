@@ -1,5 +1,6 @@
+import React,{useState,useEffect} from 'react';
+
 import { HeroWrap, WrapImageDivider, WrapObjects, Container} from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 
 import Objekt from "./Objekt/Objekt";
 import h1 from "../../images/house1.png";
@@ -22,32 +23,32 @@ import { villaC } from "./villaC.js";
 
 
 const Objekti = () => {
-
+  
+  const [vilaPhotoA, setVilaPhotoA] = useState(h1);
+  const [vilaPhotoB, setVilaPhotoB] = useState(h2);
+  const [vilaPhotoC, setVilaPhotoC] = useState(h3);
 
   const handleClick = (id) => {
   
   };
-
-
+  
   const size=useWindowSize();
-  let vilaPhotoA;
-  let vilaPhotoB;
-  let vilaPhotoC;
-  if(size.width>700){
-    vilaPhotoA=h1;
-    vilaPhotoB=h2;
-    vilaPhotoC=h3;
-  }
-  else if (size.width<=700&&size.width>500){
-    vilaPhotoA=h1_1;
-    vilaPhotoB=h2_1;
-    vilaPhotoC=h3_1;
-  }
-  else{
-    vilaPhotoA=h1;
-    vilaPhotoB=h2;
-    vilaPhotoC=h3;
-  }
+  useEffect(() => {
+    if (size.width > 700) {
+      setVilaPhotoA(h1);
+      setVilaPhotoB(h2);
+      setVilaPhotoC(h3);
+    } else if (size.width <= 700 && size.width > 500) {
+      setVilaPhotoA(h1_1);
+      setVilaPhotoB(h2_1);
+      setVilaPhotoC(h3_1);
+    } else {
+      setVilaPhotoA(h1);
+      setVilaPhotoB(h2);
+      setVilaPhotoC(h3);
+    }
+  }, [size.width]);
+ 
 
   const settings = {
     slidesToShow: 6,

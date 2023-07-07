@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { HeroWrap, Container, Title, WrapArrow, WrapBg, } from "./style.js";
+import { HeroWrap, Container, Title, WrapBg, } from "./style.js";
 import Image from "next/image";
 import Bg from "../../images/ourHome/paper.png";
 import Destination from "./Beach/Beach.js";
@@ -11,7 +11,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useScrollPercentage } from "react-scroll-percentage";
 
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
     <div className="wrapLoaderNext" onClick={onClick}>
       <div className="arrow">
@@ -22,7 +22,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
     <div className="wrapLoaderPrev" onClick={onClick}>
       <div className="arrow">
