@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import {
   HeroWrap,
@@ -8,7 +8,7 @@ import {
   Overlay,
   WrapImage,
 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
+
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Navbar from "../Navigation/navbar.js";
@@ -26,7 +26,7 @@ const Hero = () => {
   const elemRef = useRef(null);
   const [scale, setScale] = useState(1.05);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const botPos = (element) => element.getBoundingClientRect().bottom;
     const onScroll = () => {
       const divBotPos = botPos(elemRef.current);
@@ -44,7 +44,6 @@ const Hero = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
 
   return (
     <HeroWrap ref={ref} id="home">
