@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
 import {
   PlaninaWrap,
   WrapPlaninaUp,
@@ -7,34 +8,25 @@ import {
   Title,
   WrapCol,
   Col,
-  WrapAll,
+  WrapAll
 } from "./style.js";
 
+import useWindowSize from "../useWindowSize.js";
 import { useScrollPercentage } from "react-scroll-percentage";
 import Image from "next/image";
 import Up from "../../images/Planine/planinaBgGori.png";
 import Down from "../../images/Planine/planinaBgDoli.png";
 
 const Planina = () => {
+
+
   const [ref2, percentage] = useScrollPercentage({
     threshold: 0,
   });
-  const [windowWidth, setWindowWidth] = useState(null);
+
+
+const size=useWindowSize();
   
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    setWindowWidth(window.innerWidth);
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <WrapAll>
     <PlaninaWrap ref={ref2}>
@@ -42,7 +34,7 @@ const Planina = () => {
         {" "}
         <Image src={Up} alt="slider image" layout="fill" objectFit="cover" />
       </WrapPlaninaUp>
-      <WrapText  style={{transform: `translateY(-${percentage * 400}px`}}>
+      <WrapText /* inView={inView} */ style={{transform: `translateY(-${percentage * 400}px`}}>
         <Title>Suggested activities</Title>
         <WrapCol>
           <Col>
@@ -69,7 +61,7 @@ const Planina = () => {
                   Hvar Adventure
                 </a>
               </li>
-              {windowWidth>900?(
+              {size.width>900?(
                 ""
               ):(
                 <React.Fragment>
@@ -88,7 +80,7 @@ const Planina = () => {
             </ul>
           </Col>
           
-          {windowWidth>900?(
+          {size.width>900?(
           <Col>
             <ul>
               <li>
@@ -115,7 +107,7 @@ const Planina = () => {
                ):("")}
           <Col>
             <ul>
-              {windowWidth>900?(""):(
+              {size.width>900?(""):(
               <React.Fragment>
                 <li>
                 <a href="https://goo.gl/maps/RsGo7pHFdpzcGsTY7">Medvid Bod</a>{" "}
