@@ -17,7 +17,7 @@ import heroBg from "../../images/hero/hero_1.png";
 import Button from "../Button/index.js";
 
 const Hero = () => {
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
@@ -65,7 +65,7 @@ const Hero = () => {
     luxury in hundreds-year-old stone houses in the picturesque town
     Pitve.
   </SubTitle>
-  <a href="https://dvorpitve.book.rentl.io" target="_blank">
+  <a href="https://dvorpitve.book.rentl.io" target="_blank" rel="noopener noreferrer">
     <Button text="BOOK NOW" />
   </a>
 </WrapText>

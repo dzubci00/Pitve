@@ -19,13 +19,6 @@ export const HeroWrap = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  position: relative;
-  height: auto;
-  width: 80%;
-  min-width: 120rem;
-  display: flex;
-`;
 export const Grid = styled.div`
   display: grid;
   z-index: 10;
@@ -34,10 +27,10 @@ export const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 30px;
-  grid-row-gap: 0rem;
+  grid-row-gap: 0;
 
   ul{
-    list-style-position:inside;
+    list-style-position:outside;
     margin-top:5px;
   }
 
@@ -70,6 +63,7 @@ export const Grid = styled.div`
     grid-column-gap: 4rem;
     height: auto;
     width: 80%;
+    grid-row-gap:2rem;
    
     div {
       padding-right: 0rem;
@@ -102,6 +96,9 @@ export const Grid = styled.div`
     ul{
      margin:0 0 0 auto;
     }
+  }
+  @media only screen and (max-width: 430px) {
+    grid-row-gap:0;
   }
 
 
@@ -148,7 +145,7 @@ export const SubTitle = styled.h3`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
   font-family: "Civane-NorLig";
   font-weight: 100;
   font-size: 15px;

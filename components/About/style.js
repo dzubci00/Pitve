@@ -384,7 +384,7 @@ export const Links = styled.div`
     display:none;
   }
 `;
-export const Link = styled.a`
+export const Link = styled.div`
   position: relative;
   font-family: "Civane-NorLig";
   font-style: normal;

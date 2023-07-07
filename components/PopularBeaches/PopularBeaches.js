@@ -36,6 +36,7 @@ const PopulareBeaches = () => {
   const settings = {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    lazyLoad: true,
     infinite: true,
     autoplay: true,
     speed: 2000,

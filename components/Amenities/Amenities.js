@@ -1,6 +1,5 @@
 import {
   HeroWrap,
-  Container,
   Title,
   WrapImage,
   Grid,

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { HeroWrap, WrapImage, Title, Text, Line } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
 import Image from "next/image";
 
 const Destination = ({ photo, title, text, link }) => {

@@ -52,6 +52,7 @@ const Objekti = () => {
 
   const settings = {
     slidesToShow: 6,
+    lazyLoad: true,
     infinite:true,
     autoplay: true,
     autoplaySpeed: -100000,

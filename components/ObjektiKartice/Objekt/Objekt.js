@@ -53,6 +53,7 @@ const settings = {
   className: "photoSlider",
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  lazyLoad: true,
   dots: true,
   infinite: true,
   autoplay: true,

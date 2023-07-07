@@ -12,11 +12,6 @@ export const HeroWrap = styled.a`
   align-items: flex-start;
   cursor: pointer;
   text-decoration: none;
-
-  @media only screen and (max-width: 600px) {
-    /* padding-bottom: 2rem;  */
-  }
- 
    
 `;
 export const WrapImage = styled.div`
@@ -32,7 +27,6 @@ export const Line = styled.div`
   position: relative;
   height: .3rem;
   width: 5.4rem;
-
   background-color: #a55c3d;
   margin: 3rem 0 1.5rem 0;
  
@@ -45,7 +39,6 @@ export const Title = styled.h3`
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-
   color: #303145;
   margin: 0rem 0 1.5rem 0;
 
@@ -56,12 +49,10 @@ export const Text = styled.p`
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
-
   color: #303145;
   width: 90%;
+
   @media only screen and (max-width: 700px) {
     width: 100%;
-  }
-  @media only screen and (max-width: 450px) {
   }
 `;
