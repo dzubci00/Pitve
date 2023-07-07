@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-// import heroPhoto from "../../images/hero.png"
-
-// import { HeroWrap } from "./style.js"
 
 export const AboutWrap = styled.div`
   position: relative;
@@ -121,20 +118,7 @@ export const WrapIcon = styled.div`
     margin-right: 5rem;
   }
 `;
-export const Overlay = styled.div`
-  position: absolute;
-  z-index: 10;
-  height: 83.5rem;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  transform: rotate(-180deg);
-  @media only screen and (max-width: 1050px) {
-  }
-  @media only screen and (max-width: 450px) {
-  }
-`;
+
 export const Image1 = styled.div`
   position: absolute;
   z-index: 1;

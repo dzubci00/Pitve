@@ -1,5 +1,5 @@
-import { HeroWrap, WrapPhoto, WrapPhoto2 } from "./style.js";
-// import HeroVideo from "../../video/kraciVideo.mp4";
+import { HeroWrap, WrapPhoto} from "./style.js";
+
 
 import Slider from "react-slick";
 import Image from "next/image";
@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
     <div className="wrapLoaderNext">
       <div className="arrow">
@@ -21,7 +21,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
     <div className="wrapLoaderPrev">
       <div className="arrow">

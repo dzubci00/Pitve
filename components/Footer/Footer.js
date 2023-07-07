@@ -25,7 +25,7 @@ import Down from "../../images/footer/down.png";
 import { useInView } from "react-intersection-observer";
 
 const Footer = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: false,
   });
@@ -77,11 +77,9 @@ const Footer = () => {
           <Mid>Registarski sud: Trgovački sud u Splitu</Mid>
           <div>IBAN: HR3823400091111175285</div>
         </Upper>
-            <div >
-              <a href="https://sutra.hr/" target="_blank"> 
-                <Lottie loop={true} animationData={madeBySutraAnimation}  style={{fontSize:"20px"}}/> 
-              </a>
-            </div>
+            <a href="https://sutra.hr/" target="_blank"> 
+              <Lottie loop={true} animationData={madeBySutraAnimation}  style={{fontSize:"20px"}}/> 
+            </a>
       </Bottom>
 
     </HeroWrap>

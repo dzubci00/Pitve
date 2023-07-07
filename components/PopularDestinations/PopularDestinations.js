@@ -23,7 +23,7 @@ import photoBottom from "../../images/ImageDivider.png";
 import { useScrollPercentage } from "react-scroll-percentage";
 
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <div className="wrapLoaderNext" onClick={onClick}>
       <div className="arrow">
@@ -34,7 +34,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <div className="wrapLoaderPrev" onClick={onClick}>
       <div className="arrow">
